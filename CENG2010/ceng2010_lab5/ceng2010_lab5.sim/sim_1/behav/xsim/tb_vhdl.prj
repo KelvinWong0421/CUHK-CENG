@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ceng2010_lab5.srcs/sources_1/new/DivideBy2Counter.vhd" \
+"../../../../ceng2010_lab5.srcs/sources_1/new/q2.vhd" \
+"../../../../ceng2010_lab5.srcs/sim_1/new/tb.vhd" \
+
+# Do not sort compile order
+nosort

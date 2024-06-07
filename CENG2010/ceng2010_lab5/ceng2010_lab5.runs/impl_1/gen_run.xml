@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35ticpg236-1L" LaunchTime="1665998264">
+  <File Type="PA-TCL" Name="q2.tcl"/>
+  <File Type="REPORTS-TCL" Name="q2_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="q2.msk"/>
+  <File Type="RDI-RDI" Name="q2.vdi"/>
+  <File Type="BG-BIT" Name="q2.bit"/>
+  <File Type="BG-DRC" Name="q2.drc"/>
+  <File Type="BG-BGN" Name="q2.bgn"/>
+  <File Type="BG-BIN" Name="q2.bin"/>
+  <File Type="BITSTR-RBT" Name="q2.rbt"/>
+  <File Type="BITSTR-NKY" Name="q2.nky"/>
+  <File Type="BITSTR-BMM" Name="q2_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="q2.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="q2.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="q2.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="q2.hwdef"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="q2_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="q2_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="q2_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="q2_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="q2_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="q2_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="q2_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="q2_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="q2_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="q2_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="q2_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="q2_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="q2.pdi"/>
+  <File Type="RCFI_FILE" Name="q2.rcfi"/>
+  <File Type="CFI_FILE" Name="q2.cfi"/>
+  <File Type="RNPI_FILE" Name="q2.rnpi"/>
+  <File Type="NPI_FILE" Name="q2.npi"/>
+  <File Type="RBD_FILE" Name="q2.rbd"/>
+  <File Type="ROUTE-RQS" Name="q2_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="q2_postroute_physopted.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/q2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="q2"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/basys3_lab02-05.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>
